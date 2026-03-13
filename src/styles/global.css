@@ -3,6 +3,15 @@ html {
   font-family: sans-serif;
 }
 
+.menu {
+  background-color: #0d0950;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -26,6 +35,10 @@ h1 {
   width: 100%;
   display: none;
   margin: 0;
+}
+
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
 }
 
 .nav-links a {
